@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  text-align: center;
+  background-color: blanchedalmond;
+  height: 100vh;
+}
+
+/* NavBar */
+h1 {
+  padding-top: 40px;
+}
+nav {
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+/* Grid table */
+#title {
+  padding: 20px 0;
+}
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.cell {
+  border: 1px black solid;
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+table td .button {
+  display: block;
+width: 2.5rem;
+height: 2.5rem;
+font-size: 1.8rem;
+border: 0;
+margin: 0;
+padding: 0;
+text-align: center;
+text-decoration: none;
+cursor: pointer;
+border-radius: 0;
+touch-action: manipulation;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+  color: #fff;
+}
+table td .button.state0 {
+  background-color: #aaa;
+} 
+table td .button.state1 {
+  background-color: #003399;
+} 
+table td .button.state2 {
+ 
+  background-color: #fff;
+} 
+.puzzle_message {
+  height: 30px;
+  line-height: 30px;
+}
+/* all correct */
+table.correct td .button.state1 {
+  background-color: green !important;
+}
+.puzzle_message .correct {
+  color: green;
+}
+
+/* display error */
+.button.error{
+  color: red !important;
+}
+
+#checkResult {
+  height: 30px;
+}
+#btnCheck {
+  display: block;
+  margin: 0 auto;
+}
